@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida</title>
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    /*efecto de aparicion al cargar la pagina desplazamiento al cargar la pagina*/
+    @keyframes aparecerHeader {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    header {
+        animation: aparecerHeader 1s ease-out;
+        background-color: rgba(0, 0, 0, 0.5960784314);
+        font-family: "Times New Roman", Times, serif;
+        font-size: 20px;
+        font-style: normal;
+        height: auto;
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        padding: 10px 20px;
+    }
+
+    header h1 {
+        color: white;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .Menu {
+        padding: 0;
+        margin: 0;
+        width: 350px;
+        height: min-content;
+        position: relative;
+        left: 45%;
+        top: 5px;
+    }
+
+    .Menu a {
+        text-shadow: 0 0 1px rgb(255, 255, 255);
+        text-decoration: none;
+        color: white;
+        margin-right: 5px;
+        font-size: 18px;
+    }
+
+    .Menu a:hover {
+        box-shadow: 0 2px 0 white;
+        padding: 2px;
+        font-size: 20px;
+    }
+
+    /* Ajuste para el iframe debajo del header fijo */
+    iframe {
+        margin-top: 80px; /* Ajusta este valor según la altura de tu header */
+    }
+
+
+    iframe {
+        width: 90%;
+        height: 90vh;
+        max-width: 1200px;
+        border: none;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 80px blue;
+    }
+    /* Efecto de aparición para el iframe */
+    iframe {
+        opacity: 0;
+        transform: scale(0.9);
+        animation: aparecerIframe 1.5s ease-out forwards;
+    }
+
+    @keyframes aparecerIframe {
+        0% {
+            opacity: 0;
+            transform: scale(0.9);
+        }
+        50% {
+            opacity: 0.5;
+            transform: scale(1.02);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MI ProtafolioWEB</h1>
+        <div class="Menu"> 
+            <a href="../index.html" id="inicio-btn">Inicio</a>   
+            <a href="../index.html#mis-proyectos" id="mis-proyectos-btn">Mis Proyectos</a>
+            <a href="../index.html#contactame" id="contactame-btn">Contáctame</a>
+            <a href="../index.html#sobre-mi" id="sobre-mi-btn">Sobre Mí</a>
+        </div>    
+    </header>
+    <iframe src="https://drive.google.com/file/d/1z_5Yagk8MUNu4phByGrs5qyiT8XVBUsD/preview" width="640" height="480" allow="autoplay"></iframe>
+</body>
+</html>

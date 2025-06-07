@@ -107,7 +107,7 @@ section main {
   width: 350px;
   position: relative;
   left: -25%;
-  margin-top: 15%;
+  margin-top: 13%;
   /* Efectos de texto al aprecer pagina y al sobreponer el cursor sobre el contenedor texto*/
 }
 section main p {
@@ -144,7 +144,7 @@ section .contenedor-2 {
   margin: 20px;
   padding-left: 50px;
   position: relative;
-  left: 170%;
+  left: 180%;
   margin-top: -30%;
 }
 section .contenedor-2 .botones-1, section .contenedor-2 .botones-2 {
@@ -223,7 +223,7 @@ footer {
   width: 100vw;
 }
 footer p {
-  margin-left: 10%;
+  margin-left: 15%;
   color: white;
   text-align: center;
   padding: 12px;
