@@ -289,4 +289,154 @@ footer{
 }
 
 
+/*codigo ressponsiva*/
+@media screen and (max-width: 768px) {
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
 
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    h1 {
+      font-size: clamp(18px, 4vw, 20px);
+      margin-bottom: 10px;
+    }
+  }
+
+  .Menu {
+    position: static;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+    a {
+      font-size: clamp(14px, 3vw, 16px);
+      margin: 0 10px;
+    }
+  }
+
+  section {
+    flex-direction: column;
+    min-height: calc(100vh - 200px);
+    padding: 20px;
+    margin: 0;
+    position: relative;
+
+    #Mi-avatar {
+      position: static;
+      width: min(200px, 40vw);
+      height: auto;
+      margin: 20px auto;
+      display: block;
+    }
+
+    main {
+      text-align: center;
+      width: 100%;
+      padding: 0 15px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .contenedor-1 {
+    p {
+      font-size: clamp(14px, 3vw, 16px);
+      margin: 10px 0;
+      line-height: 1.4;
+    }
+  }
+
+  .botones-accion {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 20px;
+
+    a {
+      width: 100%;
+      margin: 5px 0;
+      padding: 10px;
+    }
+  }
+
+  .redes-sociales {
+    position: fixed;
+    bottom: 80px;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 99;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    z-index: 100;
+
+    p {
+      margin: 5px 0;
+      font-size: clamp(10px, 2.5vw, 12px);
+    }
+
+    .Datos {
+      padding: 0;
+      margin: 5px 0;
+
+      li {
+        margin: 3px 0;
+        font-size: clamp(10px, 2.5vw, 12px);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header h1 {
+    font-size: clamp(16px, 3.5vw, 18px);
+  }
+
+  .Menu a {
+    font-size: clamp(12px, 2.8vw, 14px);
+    margin: 0 5px;
+  }
+
+  section {
+    min-height: calc(100vh - 180px);
+  }
+
+  section #Mi-avatar {
+    width: min(150px, 35vw);
+  }
+
+  .contenedor-1 p {
+    font-size: clamp(12px, 2.8vw, 14px);
+  }
+
+  .botones-accion {
+    max-width: 250px;
+  }
+
+  .redes-sociales {
+    bottom: 70px;
+  }
+}
